@@ -41,6 +41,12 @@ For any ebook or DjVu input, read [ebook routing](references/ebook-routing.md)
 before choosing a tool. Never rasterize a text ebook solely to OCR it.
 For PDF/image OCR setup or tuning, read [CPU runtime](references/cpu-runtime.md).
 
+When this checkout includes `tools/local_book_conversion/`, an optional repo-local
+PDF/EPUB converter combines native extraction with illustration OCR and local
+profiling. Read [local converter](references/local-converter.md) before invoking
+it. It is not a universally installed command or a prerequisite for other routes;
+if unavailable, follow the format-specific guidance above.
+
 Native PaddleOCR/PaddleX OCR accepts PDF, supported raster paths and BGR NumPy
 arrays, not EPUB, MOBI, AZW3 or DjVu. Renaming a file is not conversion. The separate
 `doc2md` office route supports DOCX/PPTX/XLSX; it is not native ebook decoding.

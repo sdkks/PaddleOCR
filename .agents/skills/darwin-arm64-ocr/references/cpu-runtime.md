@@ -10,6 +10,10 @@ The configuration below targets the PaddleOCR API backed by PaddleX 3.7. A check
 baseline used PaddleX 3.7.2, PaddlePaddle 3.3.1, ONNX Runtime 1.31 and pypdfium2 5.14;
 these are compatibility evidence, not permanent requirements or a universal lockfile.
 
+For a permission-gated uv setup on macOS 14+, see
+[uv environment setup](uv-environment.md), including Python 3.14 limitations and
+optional `.python-version` behavior.
+
 Verify macOS arm64 wheels and maintained releases for the required OCR dependencies,
 CPU `onnxruntime` and, for controlled PDF rendering/extraction, `pypdfium2`. Follow
 installation instructions matching the checkout; do not copy CUDA/GPU installation
